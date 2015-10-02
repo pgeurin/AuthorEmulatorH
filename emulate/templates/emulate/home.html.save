@@ -141,7 +141,7 @@
 </head>
 <body>	
 			
-	<h1> PoemEmulator  </h1> 
+	<h1> AuthorEmulator  </h1> 
 	{% load staticfiles %}
 	<img src="{% static "emulate/pixeltriple2a.gif" %}" class="marginindent" height="4" width="650"> 
 	<!--<form style="padding-left: 260px;"> 
@@ -151,8 +151,7 @@
 	<br/>
 	<br/>
 	<h2> Insert text here, and we will emulate the work.</h2>
-	<p> Shakespeare is provided as an example. Old college essays work well too.</p>
-	<br/>
+	<p> Shakespeare is provided as an example. Dr. Seuss is good  bestr/>
 	<br/>
 	<form action="" method="get">
 	<label for="id_q"></label>
@@ -238,6 +237,6 @@ A third more opulent than your sisters? Speak."</textarea></p>
 	<img src="{% static "emulate/pixeltriple2a.gif" %}" class="marginindent" height="4" width="650"> 
 	<br/>
 	<h2> Emulation: </h2>
-	<h3> For best results: Read aloud in a dramatic flair.</h3>
+	<p cols="50" rows="10"> For best results: Read aloud in a dramatic flair.
 	<br/><br/>
 	<p style="width:350px"> {{poem}} <p/>
