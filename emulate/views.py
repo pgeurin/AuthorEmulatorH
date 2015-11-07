@@ -245,7 +245,7 @@ def index(request):
             poem = generateText( createDictionaryFromString( q ), len(q.split())-1)
             poem =  poem + " (If there aren't any repeating words in your text, the only possible emulation IS the the text you entered. Might we suggest adding a PILE of text instead of testing us?)"
     else: #this is just to make sure any input works
-        poem = "Insert Text above!"
+        poem = ""
         q= ""
 	#process a poem
 	#d = createDictionary( 'shakespeare.txt' ) #(later change shakespeare to their entry above!)
