@@ -19,6 +19,10 @@
 		h1{
 			text-align: center;
 		}
+		h2{
+			text-align: center;
+			font-size: 110%
+		}
 		.board{
 			text-align: center;
 		}
@@ -91,30 +95,13 @@
 	<br/>
 	<br/>
 	<br/>
-	<br/>
-	<form action="" method="get">
-		<div class="buttonWrapper">
-			<input class="generatePoem" type="submit" value="Generate Poem">
-		</div>
-		<div class="poemWrapper">
-		   {% if q %}
-		   <h3> For best results, Read aloud in a dramatic flair.</h3>
-		   {% endif %}
-		   
-		   <p> {{poem}} <p/>
-		</div>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-			<img src="{% static "emulate/pixeltriple2a.gif" %}" class="marginindent" height="4" > 
-		<h2> Insert text below, and we will emulate the work.</h2>
+			<h2> Insert text below, and we will make it into a poem!</h2>
 		<p> Shakespeare is provided as an example. Old college essays work well too.</p>
 	<label for="id_q"></label>
 		    {% if q %}
 			    <p><textarea class="textBox" cols="50" rows="10" id="id_q" name="q" type="text" >{{ q }}</textarea></p>
 			{% else %}
-				<p><textarea class="textBox" id="id_q" name="q" type="text" >
+				<p><textarea class="textBox" id="id_q" rows="5" name="q" type="text" >
 Meantime we shall express our darker purpose.
 Give me the map there. Know that we have divided
 In three our kingdom: and 'tis our fast intent
@@ -178,5 +165,23 @@ Strive to be interess'd; what can you say to draw
 A third more opulent than your sisters? Speak."</textarea></p>
            {% endif %}
 	</form>
+	<br/>
+	<form action="" method="get">
+		<div class="buttonWrapper">
+			<input class="generatePoem" type="submit" value="Generate Poem">
+		</div>
+		<div class="poemWrapper">
+		   {% if q %}
+		   <h3> For best results, Read aloud in a dramatic flair.</h3>
+		   {% endif %}
+		   
+		   <p> {{poem}} <p/>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+			<img src="{% static "emulate/pixeltriple2a.gif" %}" class="marginindent" height="4" > 
+
 
 	
